@@ -1,0 +1,16 @@
+{
+  "name": "raeffs-skills",
+  "skills": [
+    "./skills/grill-me",
+    "./skills/grilling",
+    "./skills/grill-with-docs",
+    "./skills/domain-modeling",
+    "./skills/to-spec",
+    "./skills/to-tickets",
+    "./skills/research",
+    "./skills/prototype",
+    "./skills/wayfinder",
+    "./skills/orwell-writing",
+    "./skills/wait-what"
+  ]
+}

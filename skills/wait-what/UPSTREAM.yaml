@@ -1,0 +1,8 @@
+repo: https://github.com/mattpocock/skills
+path: skills/productivity/wait-what
+ref: 8b36d4fb2635b3c21998dcd8144439c9e5ba7302
+adopted: 2026-08-05
+license: MIT
+deviations: |
+  Upstream's agents/openai.yaml (Codex metadata) and docs/productivity/wait-what.md
+  (their published docs site) are deliberately not adopted.

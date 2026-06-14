@@ -1,0 +1,20 @@
+repo: https://github.com/mattpocock/skills
+path: skills/engineering/wayfinder
+ref: 2ffb184ffbb752faa664c0b204f3c9241b1428e9
+adopted: 2026-08-05
+license: MIT
+deviations: |
+  Upstream's `/setup-matt-pocock-skills` tracker-config dependency is replaced
+  by an ordered detection rule where an explicit instruction (a `CLAUDE.md`
+  line, or the map's `## Notes` naming where issues live) beats anything
+  inferred from the git remote — a repo whose issues moved to Redmine keeps its
+  Forgejo remote, so the remote is not authoritative.
+  WAYFINDING-OPS.md, WAYFINDING-OPS-FORGEJO.md, WAYFINDING-OPS-LOCAL.md and
+  WAYFINDING-OPS-REDMINE.md are local additions, replacing upstream's pointer
+  to a per-repo tracker doc.
+  Claiming is made tracker-agnostic: assignment where the tracker supports it,
+  otherwise a `wayfinder:claimed` label or status line. Upstream assumes
+  assignment is always available and treats the assignee as the claim.
+  Blocking is softened to the tracker's native relationship "where it has one",
+  with a `Blocked by:` body line as the documented fallback.
+  Upstream's agents/openai.yaml (Codex metadata) is deliberately not adopted.

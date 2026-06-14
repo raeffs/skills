@@ -1,0 +1,15 @@
+{
+  "name": "skills",
+  "owner": {
+    "name": "Raphael Fleischlin",
+    "url": "https://github.com/raeffs"
+  },
+  "description": "Collection of personal skills, mostly adopted from other sources to fit personal needs and preferences.",
+  "plugins": [
+    {
+      "name": "skills",
+      "source": "./",
+      "description": "Collection of personal skills, mostly adopted from other sources to fit personal needs and preferences."
+    }
+  ]
+}

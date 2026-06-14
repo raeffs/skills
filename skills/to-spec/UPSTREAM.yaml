@@ -1,0 +1,18 @@
+repo: https://github.com/mattpocock/skills
+path: skills/engineering/to-spec
+ref: 2ffb184ffbb752faa664c0b204f3c9241b1428e9
+adopted: 2026-08-05
+license: MIT
+deviations: |
+  `description` reworded to lead with the synthesis and name the tracker
+  publishing step explicitly. No "Use when…" trigger clause: the skill sets
+  `disable-model-invocation: true`, so its description is never matched for
+  triggering.
+  Upstream's `/setup-matt-pocock-skills` config dependency is replaced by an
+  inline "Determine the issue tracker" section detecting the tracker from the
+  git remote: Forgejo/Codeberg → `fgj`, Azure DevOps → `quill`, GitHub → `gh`,
+  Redmine → `redmine-cli`.
+  Step 3 adds a fallback for label-less trackers: set the `Ready for Agent`
+  status where the `ready-for-agent` label doesn't exist, and ask the user if
+  neither does.
+  Upstream's agents/openai.yaml (Codex metadata) is deliberately not adopted.

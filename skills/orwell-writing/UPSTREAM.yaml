@@ -1,0 +1,17 @@
+repo: https://github.com/tamdogood/builder-essential-skills
+path: skills/orwell-writing
+ref: bc82ba4803c1036107c9d1fbc052dbc64c38eb25
+adopted: 2026-08-01
+license: MIT
+deviations: |
+  Description rewritten into house "<what it does>. Use when <trigger>." form.
+  Upstream's runs to two long sentences and leads with "Use when an agent is
+  asked to…"; ours leads with the behaviour and keeps the trigger list.
+
+  STE baseline rule 9 no longer defaults to American English. It now says to
+  follow the user's style guide, or match the surrounding document when there is
+  none — this repo writes British English, and the upstream default would have
+  silently Americanised it.
+
+  Upstream's README.md (install instructions for their npx installer) and
+  agents/openai.yaml (Codex metadata) are deliberately not adopted.
