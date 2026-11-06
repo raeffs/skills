@@ -5,6 +5,8 @@
     "./skills/grilling",
     "./skills/grill-with-docs",
     "./skills/domain-modeling",
+    "./skills/codebase-design",
+    "./skills/improve-codebase-architecture",
     "./skills/to-spec",
     "./skills/to-tickets",
     "./skills/research",
