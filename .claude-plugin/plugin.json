@@ -13,6 +13,7 @@
     "./skills/prototype",
     "./skills/wayfinder",
     "./skills/orwell-writing",
-    "./skills/wait-what"
+    "./skills/wait-what",
+    "./skills/fgj"
   ]
 }
