@@ -1,7 +1,7 @@
 repo: https://github.com/mattpocock/skills
 path: skills/engineering/to-tickets
-ref: 2ffb184ffbb752faa664c0b204f3c9241b1428e9
-adopted: 2026-08-05
+ref: 4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+adopted: 2026-11-06
 license: MIT
 deviations: |
   `description` says "the project's tracker" where upstream says "the configured
@@ -13,6 +13,7 @@ deviations: |
   git remote: Forgejo/Codeberg → `fgj`, Azure DevOps → `quill`, GitHub → `gh`,
   Redmine → `redmine-cli` (native `blocks` relations, `--parent` for sub-issues).
   Step 5 names the detected tooling rather than "the configured tracker" and the
-  `/setup-matt-pocock-skills` config, and adds the `Ready for Agent` status
-  fallback for label-less trackers.
+  `/setup-matt-pocock-skills` config, says "using the tracker's native parent
+  relationship" where upstream points at its per-repo tracker doc for sub-issues,
+  and adds the `Ready for Agent` status fallback for label-less trackers.
   Upstream's agents/openai.yaml (Codex metadata) is deliberately not adopted.

@@ -1,7 +1,12 @@
 repo: https://github.com/mattpocock/skills
 path: skills/productivity/grilling
-ref: 9603c1cc8118d08bc1b3bf34cf714f62178dea3b
-adopted: 2026-07-20
+ref: 4ae2317ddb22b046e26455e4f9c9b3aaaf62212d
+adopted: 2026-11-06
 license: MIT
 deviations: |
+  Questions are asked one at a time, not in rounds. Upstream asks the whole
+  frontier per round; here one frontier question is picked per turn, numbered
+  in sequence across the session, and the user answers before the next. The
+  question format, "yes accepts the recommendation", and the subagent
+  fact-finding are upstream's.
   Upstream's agents/openai.yaml (Codex metadata) is deliberately not adopted.

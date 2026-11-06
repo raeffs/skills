@@ -4,7 +4,7 @@ description: Synthesize the current conversation and codebase understanding into
 disable-model-invocation: true
 ---
 
-This skill takes the current conversation context and codebase understanding and produces a spec. Do NOT interview the user — just synthesize what you already know.
+This skill takes the current conversation context and codebase understanding and produces a spec. Do NOT interview the user; just synthesize what you already know.
 
 ## Determine the issue tracker
 
@@ -13,7 +13,7 @@ Identify the project's issue tracker from the git remote and available tooling, 
 - **Forgejo / Codeberg** (e.g. `code.raeffs.dev`, `codeberg.org`) → use the `fgj` skill
 - **Azure DevOps** → use the `quill` skill
 - **GitHub** → use `gh`
-- **Redmine** → use the `redmine-cli` skill (no labels — the `ready-for-agent` triage state is the `Ready for Agent` status)
+- **Redmine** → use the `redmine-cli` skill (no labels: the `ready-for-agent` triage state is the `Ready for Agent` status)
 
 If you can't determine which tracker the repo uses, ask the user before publishing.
 
@@ -21,11 +21,11 @@ If you can't determine which tracker the repo uses, ask the user before publishi
 
 1. Explore the repo to understand the current state of the codebase, if you haven't already. Use the project's domain glossary vocabulary throughout the spec, and respect any ADRs in the area you're touching.
 
-2. Sketch out the seams at which you're going to test the feature. Existing seams should be preferred to new ones. Use the highest seam possible. If new seams are needed, propose them at the highest point you can. The fewer seams across the codebase, the better — the ideal number is one.
+2. Sketch out the seams at which you're going to test the feature. Existing seams should be preferred to new ones. Use the highest seam possible. If new seams are needed, propose them at the highest point you can. The fewer seams across the codebase, the better: the ideal number is one.
 
 Check with the user that these seams match their expectations.
 
-3. Write the spec using the template below, then publish it to the project issue tracker. Apply the `ready-for-agent` triage label — no need for additional triage. On a tracker without labels (e.g. Redmine via `redmine-cli`), set the equivalent `Ready for Agent` status instead. If neither the label nor an equivalent state exists on the tracker, ask the user.
+3. Write the spec using the template below, then publish it to the project issue tracker. Apply the `ready-for-agent` triage label; no need for additional triage. On a tracker without labels (e.g. Redmine via `redmine-cli`), set the equivalent `Ready for Agent` status instead. If neither the label nor an equivalent state exists on the tracker, ask the user.
 
 <spec-template>
 
@@ -63,7 +63,7 @@ A list of implementation decisions that were made. This can include:
 
 Do NOT include specific file paths or code snippets. They may end up being outdated very quickly.
 
-Exception: if a prototype produced a snippet that encodes a decision more precisely than prose can (state machine, reducer, schema, type shape), inline it within the relevant decision and note briefly that it came from a prototype. Trim to the decision-rich parts — not a working demo, just the important bits.
+Exception: if a prototype produced a snippet that encodes a decision more precisely than prose can (state machine, reducer, schema, type shape), inline it within the relevant decision and note briefly that it came from a prototype. Trim to the decision-rich parts, not a working demo, just the important bits.
 
 ## Testing Decisions
 
