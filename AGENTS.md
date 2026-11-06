@@ -20,3 +20,7 @@ adopted: <date content last came in from upstream>
 license: <license of the upstream skill>
 deviations: <optional description of what changed>
 ```
+
+## Out of Scope
+
+Each file in `.out-of-scope/` records one rejected concept: what is not adopted, why, and which upstream skills it covers. Read the folder before proposing a skill to adopt. If a candidate matches a file there, show the old decision and ask whether it still holds, instead of arguing the case from the start.
